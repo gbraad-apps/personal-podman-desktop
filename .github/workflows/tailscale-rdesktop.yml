@@ -12,6 +12,7 @@ jobs:
           podman run -d --name rdesktop \
             --privileged \
             --cap-add=NET_ADMIN --cap-add=NET_RAW --device=/dev/net/tun --device=/dev/fuse \
+            --shm-size=1g \
             ghcr.io/gbraad-apps/podmandesktop:latest
       - name: Tailscale setup (root)
         run: |
