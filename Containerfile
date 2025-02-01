@@ -12,11 +12,11 @@ RUN dnf install -y \
     && flatpak remote-add --if-not-exists \
         flathub https://dl.flathub.org/repo/flathub.flatpakrepo \
     && flatpak install --assumeyes \
-        flathub ... \
+        flathub io.podman_desktop.PodmanDesktop \
     && git config -f /etc/rdesktop/rdesktop.ini \
-	rdesktop.title "Personal ..." \
+	rdesktop.title "Personal Podman Desktop" \
     && git config -f /etc/rdesktop/rdesktop.ini \
-	rdesktop.exec "flatpak run ..."
+	rdesktop.exec "flatpak run io.podman_desktop.PodmanDesktop"
 
 # ensure to become root for systemd
 #ENTRYPOINT ["/sbin/init"]

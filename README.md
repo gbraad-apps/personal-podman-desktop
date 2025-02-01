@@ -1,4 +1,4 @@
-Template to create Personal Flatpak-apps
+Podman Desktop for personal (remote) use
 ========================================
 
 > [!NOTE]

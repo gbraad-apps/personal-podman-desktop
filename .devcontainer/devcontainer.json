@@ -1,6 +1,6 @@
 {
-    "name": "<replace> remote desktop environment",
-    "image": "ghcr.io/gbraad-apps/<replace>:latest",
+    "name": "Podman Desktop remote desktop environment",
+    "image": "ghcr.io/gbraad-apps/podmandesktop:latest",
     "runArgs": [ "--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun", "--device=/dev/fuse" ],
 
     "overrideCommand": false,
